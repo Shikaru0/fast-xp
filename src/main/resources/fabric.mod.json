@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "fast-xp",
+	"version": "${version}",
+	"name": "fast-xp",
+	"description": "Fast projectile throwing mod using GLFW input with configurable projectiles and speed",
+	"authors": [
+		"Shikaru"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/fast-xp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.FastXp"
+		],
+		"client": [
+			"name.modid.client.FastXpClient"
+		],
+		"modmenu": [
+			"name.modid.client.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"fast-xp.mixins.json",
+		{
+			"config": "fast-xp.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
