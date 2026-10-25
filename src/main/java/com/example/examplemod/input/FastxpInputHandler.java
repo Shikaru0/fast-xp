@@ -43,6 +43,10 @@ public class FastxpInputHandler {
             return;
         }
 
+        if (tickCounter < FastxpClient.getConfig().getThrowDelay()) {
+            tickCounter++;
+            return;
+        }
         tickCounter = 0;
 
         var player = mc.player;

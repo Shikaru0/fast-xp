@@ -1,13 +1,3 @@
 {
-  "itemGroup.fastxp": "Example Mod Tab",
-  "block.fastxp.example_block": "Example Block",
-  "item.fastxp.example_item": "Example Item",
 
-  "fastxp.configuration.title": "Fast-xp Configs",
-  "fastxp.configuration.section.fastxp.common.toml": "Fast-xp Configs",
-  "fastxp.configuration.section.fastxp.common.toml.title": "Fast-xp Configs",
-  "fastxp.configuration.items": "Item List",
-  "fastxp.configuration.logDirtBlock": "Log Dirt Block",
-  "fastxp.configuration.magicNumberIntroduction": "Magic Number Text",
-  "fastxp.configuration.magicNumber": "Magic Number"
 }
