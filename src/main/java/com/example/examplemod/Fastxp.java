@@ -1,5 +1,6 @@
 package com.example.examplemod;
 
+import com.example.examplemod.network.FastxpNetwork;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -68,6 +69,9 @@ public class Fastxp {
     public Fastxp(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        // Register FastxpNetwork
+        modEventBus.addListener(FastxpNetwork::register);
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
