@@ -14,8 +14,8 @@ import net.minecraft.resources.Identifier;
 public class FastXpNetwork {
 
     public void register() {
-        PayloadTypeRegistry.clientboundPlay().register(JoinPayload.TYPE, JoinPayload.CODEC);
-        PayloadTypeRegistry.serverboundPlay().register(OptOutPayload.TYPE, OptOutPayload.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(JoinPayload.TYPE, JoinPayload.CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(OptOutPayload.TYPE, OptOutPayload.CODEC);
 
         ClientPlayNetworking.registerGlobalReceiver(OptOutPayload.TYPE, (payload, context) -> {
             Minecraft minecraft = Minecraft.getInstance();

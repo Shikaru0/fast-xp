@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"name.modid.client.FastXpClient"
+		],
+		"modmenu": [
+			"name.modid.client.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [
