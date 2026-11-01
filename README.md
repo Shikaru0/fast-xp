@@ -1,9 +1,4 @@
 # fast-xp
 
-## Setup
-
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+Ported [fabric-26.3](https://github.com/Shikaru0/fast-xp/tree/fabric-26.3) version to fabric 26.2;
+- From SDL back to GLFW.
